@@ -293,7 +293,7 @@ public void Shavit_OnTrackChanged(int client, int oldtrack, int newtrack)
 	g_iIntCache[client][TRACK_IDX] = newtrack;
 }
 
-public void Shavit_OnReplaySaved(int client, int style, float time, int jumps, int strafes, float sync, int track, float oldtime, float perfs, float avgvel, float maxvel, int timestamp, bool isbestreplay, bool istoolong, bool iscopy, const char[] replaypath, ArrayList frames, int preframes, int postframes, const char[] name)
+public void Shavit_OnReplaySaved(int client, int style, float time, int jumps, int strafes, float sync, int track, float oldtime, float perfs, float avgvel, float maxvel, int timestamp, bool isbestreplay, bool istoolong, ArrayList replaypaths, ArrayList frames, int preframes, int postframes, const char[] name)
 {
 	delete g_hClosestPos[style][track];
 	delete g_hReplayFrames[style][track];
